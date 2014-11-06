@@ -1,0 +1,178 @@
+extends layout
+
+block content
+    h1= title
+    p The World's Outcomes Repository
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo
+            h2 Picture
+            p
+                <span id='picture'>I wanted to pull the persons picture and post it here...Way above my skill level unfortunately.</span>     	
+            h2 Static Fields
+            p
+                strong Display Name:
+                |  <span id='displayName'></span>
+                br
+                strong Description:
+                |  <span id='description'></span>
+                br
+                strong Creation Date:
+                |  <span id='dateCreated'></span>
+                br
+                strong Private:
+                |  <span id='private'></span>
+                br
+                strong Visability:
+                |  <span id='visability'></span>
+                br
+                strong Latitide:
+                |  <span id='latitude'></span>
+                br
+                strong Longitude:
+                |  <span id='longitude'></span>
+                br
+                strong Valid User:
+                |  <span id='valid'></span>
+                br
+                strong Karma:
+                |  <span id='karma'></span>
+                br
+                strong Time Zone:
+                |  <span id='timeZone'></span>
+                br
+                strong Email Address Hidden:
+                |  <span id='hideEmail'></span>
+                br
+                strong http Etag:
+                |  <span id='httpetag'></span>
+                br
+                strong Probationary User:
+                |  <span id='probationary'></span>
+                br
+                strong Member of Team:
+                |  <span id='teamMember'></span>
+                br
+                strong Signed Ubuntu Code of Conduct:
+                |  <span id='ubuntuCoc'></span>
+                br
+                strong Mailing List Auto Subscribe Policy:
+                |  <span id='mailingListSubscribe'></span>
+                
+            h2 Links                
+            p
+              strong Mugshot:
+              |  <span id='mugshot'></span>
+              br
+              strong Logo:
+              |  <span id='logo'></span>
+              br
+              strong Preferred Email:
+              |  <span id='preferredEmail'></span>
+              br
+              strong Other Email Addresses:
+              |  <span id='otherEmail'></span>
+              br
+              strong Programing Languages:
+              |  <span id='languages'></span>
+              br
+              strong Recipes:
+              |  <span id='recipes'></span>
+              br  
+              strong Resources:
+              |  <span id='resources'></span>
+              br
+              strong Admins:
+              |  <span id='admins'></span>
+              br
+              strong Archive:
+              |  <span id='archive'></span>
+              br
+              strong Members Deactivated:
+              |  <span id='deactivatedMembers'></span>
+              br
+              strong Expired Members:
+              |  <span id='expiredMembers'></span>
+              br
+              strong GPG Keys:
+              |  <span id='gpgKeys'></span>
+              br
+              strong Hardware Submissions:
+              |  <span id='hardwareSubmissions'></span>
+              br
+              strong Invited Members:
+              |  <span id='invitedMembers'></span>
+              br
+              strong IRC Nicknames:
+              |  <span id='ircNicknames'></span>
+              br  
+              strong Jabber IDs:
+              |  <span id='jabberIds'></span>
+              br
+              strong Members:
+              |  <span id='members'></span>
+              br
+              strong Members Details:
+              |  <span id='memberDetails'></span>
+              br
+              strong Membership Invitations:
+              |  <span id='membershipInvitations'></span>
+              br
+              strong Participants:
+              |  <span id='participants'></span>
+              br              
+              strong PPAS:
+              |  <span id='ppas'></span>
+              br
+              strong Proposed Members:
+              |  <span id='proposedMembers'></span>
+              br
+              strong Self Link:
+              |  <span id='selfLink'></span>
+              br
+              strong SSH Keys:
+              |  <span id='sshKeys'></span>
+              br                  
+              strong Sub Teams:
+              |  <span id='subTeams'></span>
+              br
+              strong Super Teams:
+              |  <span id='superTeams'></span>
+              br
+              strong Team Owner:
+              |  <span id='teamOwner'></span>
+              br
+              strong Web Link:
+              |  <span id='webLink'></span>
+              br
+              strong Wiki Names:
+              |  <span id='wikiNames'></span>
+        // /USER INFO
+
+        // USER LIST
+        h2 Outcomes Catalogue
+        #userList
+            table
+                thead
+                    th User Name
+                    th Name
+                    th Private Access
+                    th Delete?
+                tbody
+        // /USER LIST
+
+        // ADD USER
+        h2 Poll the World's Repositories
+        #addUser
+            fieldset
+                input#inputUserName(type='text', placeholder='Username')
+                input#inputUserEmail(type='text', placeholder='Email')
+                input#inputOauth(type='text', placeholder='Oauth? y or n') 
+                br
+                button#btnAddUser Search Launchpad
+        // /ADD USER
+
+    // /WRAPPER
