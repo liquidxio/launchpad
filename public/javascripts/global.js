@@ -113,10 +113,7 @@ function showUserInfo(event) {
     $('#superTeams').text(thisUserObject.super_teams_collection_link);
     $('#teamOwner').text(thisUserObject.team_owner_link);
     $('#webLink').text(thisUserObject.web_link);
-    $('#wikiNames').text(thisUserObject.wiki_names_collection_link);
-    	
-    
-    
+    $('#wikiNames').text(thisUserObject.wiki_names_collection_link);    
 };
 
 // Add User
